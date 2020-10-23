@@ -1,0 +1,24 @@
+filmes ={ 
+      "Drama":["Dois Papas","O Quarto de Jack","Sempre ao seu lado"],
+      "Comédia":["Deadpool","American Pie","O Auto da Compadecida"],
+      "Policial":["Dia de Treinamento","Tropa de Elite","Os Infiltrados"],
+      "Guerra":["Até o ultimo homem","1917","Rambo"]
+	  }
+pagina=open("index02.html","w")
+pagina.write("""
+<html lang="pt=BR">
+<head>
+     <title>Dicionário de Filmes/tilte>
+</head>
+<body>
+""")
+for c,v in filmes.items(:
+	pagina.write("<h1>%sh1>" % c)
+	for e in v:
+		pagina.write("<p>%s</p>"% e)
+pagina.write("""
+</body>
+</html>
+""")
+pagina.close()
+pagina.close()
